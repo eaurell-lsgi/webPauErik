@@ -2,84 +2,126 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Contactos Clasificados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Contacto - Restaurante La Delicia</title>
   <style>
     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
-      font-family: "Courier New", Courier, monospace;
-      background-color: #000;
-      color: #00ff99;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
-    .terminal {
-      background-color: #111;
-      border: 2px solid #00ff99;
-      padding: 20px;
-      width: 600px;
-      max-width: 90%;
-      box-shadow: 0 0 15px #00ff99;
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 30px;
-      text-shadow: 0 0 5px #00ff99;
-    }
-
-    .agent {
-      margin-bottom: 25px;
-      border: 1px dashed #00ff99;
-      padding: 15px;
-    }
-
-    .agent h2 {
-      margin: 0 0 10px;
+      color: #333;
       text-transform: uppercase;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
     }
 
-    .agent p {
+    .persona {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #ffebcd;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .persona .info {
+      flex: 1;
+      padding: 10px;
+    }
+
+    .persona .info h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: #d85b00;
+    }
+
+    .persona .info p {
       margin: 5px 0;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .persona img {
+      max-width: 100px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .btn {
-      background-color: transparent;
-      border: 1px solid #00ff99;
-      color: #00ff99;
-      padding: 5px 10px;
+      background-color: #ff8c00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
-      font-family: inherit;
+      font-size: 1.1em;
+      transition: background-color 0.3s;
     }
 
     .btn:hover {
-      background-color: #00ff99;
-      color: #000;
+      background-color: #d75b00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+    }
+
+    footer a {
+      color: #ff8c00;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="terminal">
-    <h1>Base de Datos de Contacto: CLASIFICADO</h1>
+  <div class="container">
+    <h1>Contacto Restaurante "La Delicia"</h1>
 
-    <div class="agent">
-      <h2>AGENTE: Erik Aurell</h2>
-      <p><strong>Código:</strong> E-RX77</p>
-      <p><strong>Email:</strong> erik.aurell@agenciasecreta.org</p>
-      <p><strong>Canal Seguro:</strong> +34 612 345 678</p>
-      <button class="btn" onclick="alert('Mensaje enviado a Erik Aurell')">Enviar mensaje encriptado</button>
+    <div class="persona">
+      <div class="info">
+        <h2>Carlos, el Chef</h2>
+        <p><strong>Cargo:</strong> Chef Ejecutivo</p>
+        <p><strong>Email:</strong> carlos@ladelicia.com</p>
+        <p><strong>Teléfono:</strong> +34 912 345 678</p>
+        <button class="btn" onclick="alert('Mensaje enviado al Chef Carlos')">Enviar mensaje al Chef</button>
+      </div>
+      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Carlos Chef">
     </div>
 
-    <div class="agent">
-      <h2>AGENTE: Pau Descamps</h2>
-      <p><strong>Código:</strong> P-DX09</p>
-      <p><strong>Email:</strong> pau.descamps@agenciasecreta.org</p>
-      <p><strong>Canal Seguro:</strong> +34 699 876 543</p>
-      <button class="btn" onclick="alert('Mensaje enviado a Pau Descamps')">Enviar mensaje encriptado</button>
+    <div class="persona">
+      <div class="info">
+        <h2>Lucía, la Mesera</h2>
+        <p><strong>Cargo:</strong> Mesera Principal</p>
+        <p><strong>Email:</strong> lucia@ladelicia.com</p>
+        <p><strong>Teléfono:</strong> +34 698 765 432</p>
+        <button class="btn" onclick="alert('Mensaje enviado a Lucía')">Enviar mensaje a Lucía</button>
+      </div>
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lucía Mesera">
     </div>
   </div>
+
+  <footer>
+    <p>¿Tienes preguntas? <a href="mailto:contacto@ladelicia.com">Contáctanos aquí</a></p>
+  </footer>
 </body>
 </html>
