@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactos Clasificados</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      background-color: #000;
+      color: #00ff99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .terminal {
+      background-color: #111;
+      border: 2px solid #00ff99;
+      padding: 20px;
+      width: 600px;
+      max-width: 90%;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 0 0 5px #00ff99;
+    }
+
+    .agent {
+      margin-bottom: 25px;
+      border: 1px dashed #00ff99;
+      padding: 15px;
+    }
+
+    .agent h2 {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
+    .agent p {
+      margin: 5px 0;
+    }
+
+    .btn {
+      background-color: transparent;
+      border: 1px solid #00ff99;
+      color: #00ff99;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background-color: #00ff99;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <h1>Base de Datos de Contacto: CLASIFICADO</h1>
+
+    <div class="agent">
+      <h2>AGENTE: Erik Aurell</h2>
+      <p><strong>Código:</strong> E-RX77</p>
+      <p><strong>Email:</strong> erik.aurell@agenciasecreta.org</p>
+      <p><strong>Canal Seguro:</strong> +34 612 345 678</p>
+      <button class="btn" onclick="alert('Mensaje enviado a Erik Aurell')">Enviar mensaje encriptado</button>
+    </div>
+
+    <div class="agent">
+      <h2>AGENTE: Pau Descamps</h2>
+      <p><strong>Código:</strong> P-DX09</p>
+      <p><strong>Email:</strong> pau.descamps@agenciasecreta.org</p>
+      <p><strong>Canal Seguro:</strong> +34 699 876 543</p>
+      <button class="btn" onclick="alert('Mensaje enviado a Pau Descamps')">Enviar mensaje encriptado</button>
+    </div>
+  </div>
+</body>
+</html>
