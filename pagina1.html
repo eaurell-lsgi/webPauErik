@@ -7,121 +7,122 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
+      background: #fffae6;
+      color: #5a5a5a;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836'); 
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
 
     .container {
       width: 80%;
-      max-width: 1000px;
-      background-color: #fff;
+      max-width: 1200px;
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       padding: 30px;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      color: #333;
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-family: 'Courier New', Courier, monospace;
       text-transform: uppercase;
-      margin-bottom: 30px;
       letter-spacing: 2px;
     }
 
-    .persona {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background-color: #ffebcd;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .persona .info {
-      flex: 1;
-      padding: 10px;
-    }
-
-    .persona .info h2 {
-      margin-top: 0;
-      font-size: 1.5em;
-      color: #d85b00;
-    }
-
-    .persona .info p {
-      margin: 5px 0;
-      font-size: 1em;
-      color: #333;
-    }
-
-    .persona img {
-      max-width: 100px;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .btn {
+    .menu-option {
       background-color: #ff8c00;
-      color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      color: white;
+      padding: 20px;
+      width: 250px;
+      margin: 15px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 10px;
       cursor: pointer;
-      font-size: 1.1em;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .btn:hover {
+    .menu-option:hover {
       background-color: #d75b00;
+      transform: scale(1.1);
+    }
+
+    .menu-option:active {
+      transform: scale(0.95);
+    }
+
+    .menu-option i {
+      font-size: 1.5em;
+      margin-right: 10px;
     }
 
     footer {
-      text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
+      font-size: 1em;
       color: #777;
     }
 
     footer a {
       color: #ff8c00;
       text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Contacto Restaurante "La Delicia"</h1>
+    <h1>Bienvenido a La Delicia</h1>
+    <p>Seleccione una opción para contactar con nuestros chefs y meseros:</p>
 
-    <div class="persona">
-      <div class="info">
-        <h2>Carlos, el Chef</h2>
-        <p><strong>Cargo:</strong> Chef Ejecutivo</p>
-        <p><strong>Email:</strong> carlos@ladelicia.com</p>
-        <p><strong>Teléfono:</strong> +34 912 345 678</p>
-        <button class="btn" onclick="alert('Mensaje enviado al Chef Carlos')">Enviar mensaje al Chef</button>
-      </div>
-      <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Carlos Chef">
+    <div>
+      <!-- Opción Chef -->
+      <button class="menu-option" onclick="contactar('Chef Pau')">
+        <i>🍽️</i> Contactar al Chef Pau
+      </button>
+      
+      <!-- Opción Mesera -->
+      <button class="menu-option" onclick="contactar('Mesera Erika')">
+        <i>🍹</i> Contactar a la Mesera Erika
+      </button>
+      
+      <!-- Opción General -->
+      <button class="menu-option" onclick="contactar('Restaurante')">
+        <i>📞</i> Contacto General
+      </button>
     </div>
 
-    <div class="persona">
-      <div class="info">
-        <h2>Lucía, la Mesera</h2>
-        <p><strong>Cargo:</strong> Mesera Principal</p>
-        <p><strong>Email:</strong> lucia@ladelicia.com</p>
-        <p><strong>Teléfono:</strong> +34 698 765 432</p>
-        <button class="btn" onclick="alert('Mensaje enviado a Lucía')">Enviar mensaje a Lucía</button>
-      </div>
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lucía Mesera">
-    </div>
+    <footer>
+      <p>¿Tienes alguna pregunta? <a href="mailto:contacto@ladelicia.com">Contáctanos aquí</a></p>
+    </footer>
   </div>
 
-  <footer>
-    <p>¿Tienes preguntas? <a href="mailto:contacto@ladelicia.com">Contáctanos aquí</a></p>
-  </footer>
+  <script>
+    function contactar(persona) {
+      let mensaje = '';
+      
+      if (persona === 'Chef Carlos') {
+        mensaje = 'Tu mensaje será enviado al Chef Carlos para cualquier consulta sobre el menú.';
+      } else if (persona === 'Mesera Lucía') {
+        mensaje = 'Tu mensaje será enviado a la Mesera Lucía para atenderte en el restaurante.';
+      } else if (persona === 'Restaurante') {
+        mensaje = 'Tu mensaje será dirigido al contacto general del restaurante.';
+      }
+
+      alert(mensaje + ' (¡Recuerda que esto es solo una simulación de contacto)');
+    }
+  </script>
 </body>
 </html>
