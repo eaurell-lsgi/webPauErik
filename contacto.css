@@ -1,0 +1,66 @@
+/* Estilos para la página */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1a4fc0;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor para las tarjetas de contacto */
+  .contact-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  /* Estilo de las tarjetas de contacto */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo de las imágenes de perfil */
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los nombres */
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+  
+  /* Estilo de los roles */
+  .role {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo de los enlaces de contacto */
+  .contact-info a {
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    margin: 5px 0;
+  }
+  
+  /* Efecto hover para los enlaces */
+  .contact-info a:hover {
+    color: #0056b3;
+  }
+  
