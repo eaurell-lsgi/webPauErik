@@ -17,10 +17,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Close Menu</a>
-  <a href="http://127.0.0.1:5500/index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
-  <a href="http://127.0.0.1:5500/pagina1.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Contacte</a>
-  <a href="http://127.0.0.1:5500/pagina1.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Valoracions</a>
-  <a href="http://127.0.0.1:5500/pagina1.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Receptes</a>
+  <a href="index.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+  <a href="pagina1.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Contacte</a>
+  <a href="valoracions.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Valoracions</a>
+  <a href="receptes.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Receptes</a>
 
 
 </nav>
@@ -28,8 +28,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <!-- Top menu -->
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16"> <a href="http://127.0.0.1:5500/pagina1.html" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button">Contace</div></a>
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">-</div>
     <div class="w3-center w3-padding-16">Restaurant la Salle Girona</div>
   </div>
 </div>
@@ -54,7 +53,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       <img src="./fotos/paella.jpg" alt="Cherries" style="width:100%">
       <h3>Paella de Carn</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
     </div>
     <div class="w3-quarter">
       <img src="./fotos/pizza.jpg" alt="Pasta and Wine" style="width:100%">
@@ -88,23 +86,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   </div>
 
   <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
+
   
   <hr id="about">
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">  
     <h3>Localització</h3><br>
+    <h4>Clica a la imatge per anar-hi</h4><br>
+    <a href="https://www.google.com/maps/place/Instituto+La+Salle/@41.9775246,2.8213915,19.25z/data=!4m6!3m5!1s0x12bae6d972e54c33:0x79bcddf0a93e8419!8m2!3d41.9774992!4d2.8214046!16s%2Fg%2F1q5ccc7xl?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D"  target="_blank" onclick="w3_close()">
     <img src="./fotos/ubicacion.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    </a>
     <div class="w3-padding-32">
       <h4><b>Carrer de Sant Joan Bta. la Salle, 12, 17002 Girona</b></h4>
       <h6><i></i></h6>
@@ -114,41 +106,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <hr>
   
   <!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
+  <footer class="servei">
+    <div class="servei1">
+      <h3>SERVEI</h3>
       <p>Som un equip de professionals apassionats per l'alta gastronomia, dedicats a oferir-te una experiència única i memorable. Amb més de 10 anys d'experiència en el sector, ens comprometem a portar els millors ingredients locals i un servei impecable, perquè cada moment a la nostra taula sigui especial.</p>
       <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 
     </div>
   
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Recepta Truita de Patates</span><br>
-          <span></span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Recepta Carbonara</span><br>
-          <span></span>
-        </li> 
-      </ul>
-    </div>
+  
 
-    <div class="w3-third w3-serif">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Girona</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Carbonara</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Italia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salad</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Restaurant</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Meat</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">City</span>
-      </p>
-    </div>
-  </footer>
+
 
 <!-- End page content -->
 </div>
