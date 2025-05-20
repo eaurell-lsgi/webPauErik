@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #f5f5f5, #e6e6e6);
+  color: #333;
+  padding: 3rem;
+  background-image: url('https://via.placeholder.com/1920x1080/cccccc/ffffff?text=Fons+Restaurant');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgb(14, 11, 11);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #1a1818;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #201212;
+}
+
+.resenas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.card {
+  background: rgba(238, 238, 245, 0.904); /* Fondo blanco translúcido */
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  overflow: hidden;
+  height: auto;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+
+.estrella {
+  color: gold;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.autor {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.detalle {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #fff;
+}

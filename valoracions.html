@@ -3,131 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <title>Reseñas - Restaurant La Salle Girona</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to right, #f5f5f5, #e6e6e6);
-      color: #333;
-      padding: 2rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #2c3e50;
-    }
-
-    .resenas {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      position: relative;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .estrella {
-      color: gold;
-      font-size: 1.2rem;
-    }
-
-    .autor {
-      font-weight: bold;
-      margin-top: 1rem;
-      color: #555;
-    }
-
-    .detalle {
-      font-style: italic;
-      margin-top: 0.5rem;
-      color: #777;
-    }
-
-    .tag {
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      background: #3498db;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      font-size: 0.8rem;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <link rel="stylesheet" href="valoracions.css"> <!-- Vinculem el fitxer CSS -->
 </head>
 <body>
   <header>
     <h1>Valoracions del Restaurant La Salle Girona</h1>
-    <p>El millor restaurant de tot el mon, i els millors clients.</p>
+    <p>El millor restaurant del món, i els millors clients.</p>
   </header>
 
   <section class="resenas">
+    <!-- Resenya 1 -->
     <div class="card">
-      <div class="tag">Client habitual</div>
       <p>"El menú degustación fue una experiencia sublime. Cada plato parecía una obra de arte. ¡Volveré seguro!"</p>
       <div class="estrella">★★★★★</div>
       <div class="autor">– Clara Font</div>
       <div class="detalle">Visitó el 4 de mayo de 2025</div>
     </div>
 
+    <!-- Resenya 2 -->
     <div class="card">
-      <div class="tag">Vegana</div>
       <p>"Me sorprendió gratamente la variedad de opciones vegetarianas y veganas. Además, el personal fue muy atento."</p>
       <div class="estrella">★★★★☆</div>
       <div class="autor">– Erika Solé</div>
       <div class="detalle">Visitó el 27 de abril de 2025</div>
     </div>
 
+    <!-- Resenya 3 -->
     <div class="card">
-      <div class="tag">Enoturista</div>
       <p>"La carta de vinos locales es impresionante. Maridaron a la perfección con cada plato. ¡Un placer para el paladar!"</p>
       <div class="estrella">★★★★★</div>
       <div class="autor">– Marc Viñas</div>
       <div class="detalle">Visitó el 15 de abril de 2025</div>
     </div>
 
+    <!-- Resenya 4 -->
     <div class="card">
-      <div class="tag">Familiar</div>
       <p>"Fuimos con los niños y comieron de maravilla. Hay menú infantil y espacio para ellos. Todo muy cuidado."</p>
       <div class="estrella">★★★★☆</div>
       <div class="autor">– Júlia Esteve</div>
       <div class="detalle">Visitó el 30 de marzo de 2025</div>
     </div>
+
+    <!-- Resenya 5 -->
+    <div class="card">
+      <p>"El servicio fue impecable. Nos recomendaron un plato que jamás habríamos probado y fue excelente."</p>
+      <div class="estrella">★★★★★</div>
+      <div class="autor">– Alberto Pérez</div>
+      <div class="detalle">Visitó el 14 de marzo de 2025</div>
+    </div>
+
+    <!-- Resenya 6 -->
+    <div class="card">
+      <p>"Una cena romántica perfecta. La iluminación y el ambiente fueron ideales. El menú es muy creativo y sabroso."</p>
+      <div class="estrella">★★★★★</div>
+      <div class="autor">– Laura Gómez</div>
+      <div class="detalle">Visitó el 22 de febrero de 2025</div>
+    </div>
+
+    <!-- Resenya 7 -->
+    <div class="card">
+      <p>"El lugar tiene una atmósfera única. El sabor de la comida, el trato del personal y la música en vivo fueron espectaculares."</p>
+      <div class="estrella">★★★★★</div>
+      <div class="autor">– Carlos Martínez</div>
+      <div class="detalle">Visitó el 8 de febrero de 2025</div>
+    </div>
+
+    <!-- Resenya 8 -->
+    <div class="card">
+      <p>"Comimos de maravilla, pero el precio es algo elevado. Aún así, vale la pena por la calidad de los ingredientes."</p>
+      <div class="estrella">★★★★☆</div>
+      <div class="autor">– Sonia Ruiz</div>
+      <div class="detalle">Visitó el 18 de enero de 2025</div>
+    </div>
+
+    <!-- Resenya 9 -->
+    <div class="card">
+      <p>"Excelente atención al cliente, siempre pendientes de que estuviéramos cómodos. El chef nos saludó personalmente, un toque especial."</p>
+      <div class="estrella">★★★★★</div>
+      <div class="autor">– Javier López</div>
+      <div class="detalle">Visitó el 5 de enero de 2025</div>
+    </div>
+
+    <!-- Resenya 10 -->
+    <div class="card">
+      <p>"Una experiencia inolvidable. Desde la entrada hasta el postre, todo estaba espectacular. Volveremos pronto!"</p>
+      <div class="estrella">★★★★★</div>
+      <div class="autor">– Marta Fernández</div>
+      <div class="detalle">Visitó el 30 de diciembre de 2024</div>
+    </div>
+
   </section>
 
   <footer>
-    © 2025 Restaurant La Salle Girona — ¡Gracias por cada reseña!
+     2025 Restaurant La Salle Girona — ¡Gracias por cada reseña!
   </footer>
+
 </body>
 </html>
