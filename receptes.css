@@ -45,6 +45,7 @@
   /* Títol principal */
   h1 {
     text-align: center;
+    padding: 1%;
     color: #000000;
     margin-bottom: 2rem;
   }
